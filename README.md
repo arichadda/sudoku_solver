@@ -1,5 +1,7 @@
 # README
 
+To create the `.cnf` files from the sudoku, run `sudoku2cnf.py` and supply it with the appropriate filename. 
+
 To run the SAT solver, go to `solve_sodoku.py` and uncomment the puzzle you would like to run as well as the algorithm either `gsat()` or `walksat()`. The solution will be written to a `.sol` file with the same base name as the puzzle. 
 
 *GSAT:* The GSAT algorithm was implemented as per the recommenced pseudocode. A random assignment of True or False was chosen for each variable and then assigned. At each iteration, the number of unsatisfied constraints was checked. Then based on the random number between 0 and 1 that was generated (if it was greater than the threshold value), a random variable was flipped or the variable that satisfied the most constraints if flipped was flipped. For the flip check, I used the same unsatisfied constraint function as the terminal test and then re-updated back to the original value while recording the number of unsatisfied constraints where fewer was better. 
