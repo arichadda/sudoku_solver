@@ -1,6 +1,6 @@
 # README
 
-To create the `.cnf` files from the sudoku, run `sudoku2cnf.py` and supply it with the appropriate filename. 
+To create the `.cnf` files from the sudoku, run `sudoku2cnf.py` and supply it with the appropriate `.sud` filename. 
 
 To run the SAT solver, go to `solve_sodoku.py` and uncomment the puzzle you would like to run as well as the algorithm either `gsat()` or `walksat()`. The solution will be written to a `.sol` file with the same base name as the puzzle. 
 
