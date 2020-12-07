@@ -1,5 +1,4 @@
 # README
---
 
 To run the SAT solver, go to `solve_sodoku.py` and uncomment the puzzle you would like to run as well as the algorithm either `gsat()` or `walksat()`. The solution will be written to a `.sol` file with the same base name as the puzzle. 
 
